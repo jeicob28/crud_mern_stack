@@ -5,6 +5,10 @@ const app = express()
 
 const archivoBD = require('./bdconexion/conexion')
 
+// importamos archivo de rutas y modelos
+
+const rutasusuario = require('./routes/user')
+
 app.get('/', (req,res)=>{ 
     res.end('Bienvenidos al servidor BACKEND corriendo')
 })
